@@ -1,0 +1,32 @@
+.badge {
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.badge-easy {
+  color: #25795A;
+  background-color: #effaf5;
+  &:hover {
+    background-color: #E6F7F7;
+  }
+}
+
+
+.badge-medium {
+  color: #946c00;
+  background-color: #fffaeb;
+  &:hover {
+    background-color: #FFF6DF;
+  }
+}
+
+
+.badge-hard {
+  color: #cc0f35;
+  background-color: #feecf0;
+  &:hover {
+    background-color: #fde0e6;
+  }
+}
