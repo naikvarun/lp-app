@@ -1,5 +1,5 @@
-import { QuestionDifficulty } from '../../questions/data.tsx';
 import './difficulty-badge.scss';
+import { QuestionDifficulty } from '../../types.ts';
 const DifficultyBadge: React.FC<{ difficulty: QuestionDifficulty }> = ({
   difficulty,
 }) => {
