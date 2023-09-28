@@ -1,13 +1,14 @@
 export type QuestionDifficulty = 'easy' | 'hard' | 'medium';
 
-export type Question = {
+export interface Question {
   problem: string;
   pattern: string;
   link: string;
   difficulty: QuestionDifficulty;
   video: string;
   isCompleted?: boolean;
-};
+  duration: number;
+}
 
 export type QuestionID = Question['link'];
 export type ProgressID = Question['pattern'];

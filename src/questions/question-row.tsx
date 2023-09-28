@@ -1,6 +1,5 @@
 import React from 'react';
 import DifficultyBadge from '../components/difficulty-badge/difficulty-badge.tsx';
-import VideoButton from '../components/video-button/video-button.tsx';
 import './question-row.scss';
 import { QuestionID } from '../types.ts';
 import { useAppDispatch, useAppSelector } from '../store';
@@ -34,9 +33,7 @@ const QuestionRow: React.FC<{ link: QuestionID }> = ({ link }) => {
       <td className={tdClasses}>
         <DifficultyBadge difficulty={question.difficulty} />{' '}
       </td>
-      <td className={`${tdClasses} row-center`}>
-        <VideoButton link={question.video} />{' '}
-      </td>
+      <td className={`${tdClasses} row-center`}>{question.duration}</td>
     </tr>
   );
 };

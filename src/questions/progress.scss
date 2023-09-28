@@ -1,7 +1,7 @@
 .progress-detail {
-  padding: 0 2rem;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   gap: 1rem;
   & .progress-item {
     width: 17rem;

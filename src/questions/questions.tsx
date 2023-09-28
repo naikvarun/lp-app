@@ -12,7 +12,7 @@ const Questions = () => {
             <th>Problem</th>
             <th>Pattern</th>
             <th>Difficulty</th>
-            <th>Solution</th>
+            <th>Duration</th>
           </tr>
         </thead>
         <tbody>
