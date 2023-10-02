@@ -1,4 +1,4 @@
-export type LocalStorageKeys = 'questions.completed';
+export type LocalStorageKeys = 'questions.completed' | 'ui.showTopics';
 
 export type CompletedQuestions = { [key: string]: boolean };
 
@@ -21,4 +21,18 @@ function markQuestionCompleted(link: string, completed: boolean) {
   }
   save('questions.completed', saved);
 }
-export const localStore = { markQuestionCompleted, getCompleted };
+
+function setTopicVisibility(visiablity: boolean) {
+  save('ui.showTopics', visiablity);
+}
+
+function getTopicVisibility() {
+  return get<boolean>('ui.showTopics');
+}
+
+export const localStore = {
+  markQuestionCompleted,
+  getCompleted,
+  setTopicVisibility,
+  getTopicVisibility,
+};

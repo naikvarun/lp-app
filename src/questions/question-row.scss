@@ -1,7 +1,46 @@
 .row-center {
   text-align: center;
 }
-.completed  {
-  // background-color: var(--pico-table-row-stripped-background-color);
-  background-color: #d7e6d7;
+.question-completed  {
+  background-color: rgb(236,253,245)
+}
+.question-row {
+  padding: 0.5rem var(--pico-spacing);
+  border: var(--pico-border-width) solid var(--pico-form-element-border-color);
+  border-bottom: none;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  &:first-of-type {
+    border-top: none;
+  }
+  &:last-of-type {
+    border-bottom: var(--pico-border-width) solid var(--pico-form-element-border-color);
+  }
+}
+.toggle-button {
+  all: unset;
+  font-size: var(--pico-font-size);
+  color: rgb(209, 213, 219);
+  &:hover {
+    cursor: pointer ;
+    color: rgb(156, 163, 175);
+  }
+}
+
+
+.mark-completed {
+  color: rgb(16, 185, 129);
+}
+
+.question-details {
+  display: flex;
+  gap: var(--pico-typography-spacing-vertical)
+}
+.question-link {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline ;
+  }
 }

@@ -1,0 +1,20 @@
+.week {
+  & summary {
+    display: flex;
+    justify-content: space-between;
+    border: var(--pico-border-width) solid var(--pico-range-active-border-color);
+    border-radius: var(--pico-border-radius);
+    padding: 0.5rem;
+    margin-bottom: 0 !important;
+  }
+}
+/*style={{
+  display: 'flex',
+  width: '100%',
+  justifyContent: 'space-between',
+  alignContent: 'center',
+}}*/
+
+.question-list {
+  padding: 0 1.5rem;
+}

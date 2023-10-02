@@ -10,7 +10,7 @@ function App() {
   const dispatch = useAppDispatch();
   useEffect(() => {
     dispatch(initializeQuestions());
-  }, []);
+  }, [dispatch]);
   return (
     <>
       <AppHeader />
@@ -18,6 +18,7 @@ function App() {
         <section>
           <Progress />
         </section>
+        <section></section>
         <section>
           <Questions />
         </section>
