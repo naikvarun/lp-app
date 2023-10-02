@@ -15,6 +15,7 @@ const QuestionRow: React.FC<{ link: QuestionID }> = ({ link }) => {
         <a
           className="question-link"
           href={`https://leetcode.com/problems/${link}`}
+          target="_blank"
         >
           {question.problem}
         </a>
